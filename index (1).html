@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مؤسسة العَدل للمحاماة والاستشارات القانونية | Justice Law Firm</title>
+<meta name="description" content="مؤسسة العدل للمحاماة والاستشارات القانونية - الأستاذ أحمد علي المحامي. خدمات قانونية شاملة في القانون الجنائي والمدني والتجاري والعقاري والإداري والعمل والضرائب والأحوال الشخصية - مدينة نصر، القاهرة.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700&family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#16243D;
+  --navy-2:#1F3354;
+  --navy-deep:#101B2E;
+  --gold:#B8902E;
+  --gold-light:#D6B45C;
+  --gold-soft:#EBD9A8;
+  --ivory:#F7F4ED;
+  --ivory-2:#FBF9F3;
+  --ink:#2B2B2B;
+  --muted:#6A6A6A;
+  --line:#E3DCCB;
+  --white:#FFFFFF;
+  --shadow:0 10px 30px rgba(22,36,61,.10);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Tajawal',sans-serif;color:var(--ink);background:var(--ivory);line-height:1.9;font-size:17px}
+body.en{font-family:'Inter',sans-serif}
+h1,h2,h3,.display{font-family:'Amiri',serif}
+body.en h1,body.en h2,body.en h3,body.en .display{font-family:'Playfair Display',serif}
+img{max-width:100%}
+a{text-decoration:none;color:inherit}
+.container{max-width:1180px;margin:0 auto;padding:0 22px}
+
+/* ===== Top bar ===== */
+.topbar{background:var(--navy-deep);color:#CBD3E1;font-size:13.5px}
+.topbar .container{display:flex;justify-content:space-between;align-items:center;padding-top:8px;padding-bottom:8px;gap:14px;flex-wrap:wrap}
+.topbar .left{display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+.topbar .left span{display:flex;align-items:center;gap:6px}
+.topbar a{color:var(--gold-light);font-weight:500}
+.topbar a:hover{color:#fff}
+.lang-switch{background:transparent;border:1px solid var(--gold);color:var(--gold-light);padding:4px 12px;border-radius:3px;cursor:pointer;font-family:inherit;font-size:12.5px;font-weight:700;letter-spacing:.5px}
+.lang-switch:hover{background:var(--gold);color:#fff}
+
+/* ===== Header ===== */
+header{background:var(--white);border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:50;box-shadow:0 2px 16px rgba(22,36,61,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:14px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand .mark{width:58px;height:58px;flex:none}
+.brand-text .ar{font-family:'Amiri',serif;font-weight:700;font-size:21px;color:var(--navy);line-height:1.3}
+.brand-text .en{font-size:11px;letter-spacing:2.5px;color:var(--gold);font-weight:700}
+body.en .brand-text .ar{font-family:'Playfair Display',serif;font-size:19px}
+nav.menu{display:flex;gap:4px;align-items:center}
+nav.menu a{padding:9px 13px;font-weight:500;color:var(--navy);border-radius:4px;font-size:15.5px;transition:all .2s}
+nav.menu a:hover{background:var(--ivory);color:var(--gold)}
+nav.menu a.active{color:var(--gold);font-weight:700;border-bottom:2px solid var(--gold)}
+.cta-btn{background:var(--gold);color:#fff !important;padding:10px 20px !important;border-radius:4px;font-weight:700 !important}
+.cta-btn:hover{background:#A37D24 !important}
+.burger{display:none;background:none;border:1.5px solid var(--navy);border-radius:5px;padding:7px 11px;font-size:19px;color:var(--navy);cursor:pointer}
+
+/* ===== Pages ===== */
+.page{display:none}
+.page.active{display:block;animation:fade .45s ease}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){.page.active{animation:none}.reveal{opacity:1 !important;transform:none !important}}
+
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}
+.reveal.show{opacity:1;transform:none}
+
+/* ===== Hero ===== */
+.hero{background:linear-gradient(135deg,var(--navy-deep) 0%,var(--navy) 60%,var(--navy-2) 100%);color:#fff;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(184,144,46,.18),transparent 50%);z-index:1}
+.hero .container{position:relative;padding:90px 22px 100px;z-index:2}
+.hero-scales{position:absolute;left:-60px;bottom:-80px;width:500px;opacity:.06;z-index:1}
+body[dir="ltr"] .hero-scales{left:auto;right:-60px}
+.hero .eyebrow{color:var(--gold-light);letter-spacing:1.5px;font-weight:500;margin-bottom:16px;display:flex;align-items:center;gap:12px;font-size:14px}
+.hero .eyebrow::before{content:"";width:46px;height:2px;background:var(--gold)}
+.hero h1{font-size:clamp(30px,4.8vw,54px);font-weight:700;line-height:1.45;max-width:780px}
+.hero h1 em{font-style:normal;color:var(--gold-light)}
+.hero p.lead{max-width:680px;margin:24px 0 36px;color:#D8DEE9;font-size:18px;font-weight:300;line-height:1.85}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 30px;border-radius:4px;font-weight:700;font-size:16px;transition:all .25s;cursor:pointer;border:none;font-family:inherit}
+.btn-gold{background:var(--gold);color:#fff;box-shadow:0 6px 20px rgba(184,144,46,.4)}
+.btn-gold:hover{background:#A37D24;transform:translateY(-2px);box-shadow:0 8px 24px rgba(184,144,46,.5)}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.45);color:#fff}
+.btn-ghost:hover{border-color:var(--gold-light);color:var(--gold-light)}
+
+/* ===== Stats strip ===== */
+.stats{background:var(--ivory-2);border-bottom:1px solid var(--line);border-top:1px solid var(--line);padding:30px 0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+.stat .num{font-family:'Amiri',serif;font-size:38px;color:var(--gold);font-weight:700;line-height:1}
+body.en .stat .num{font-family:'Playfair Display',serif}
+.stat .label{color:var(--navy);font-size:14.5px;font-weight:500;margin-top:6px}
+
+/* ===== Sections ===== */
+section{padding:70px 0}
+.section-head{margin-bottom:42px;max-width:760px}
+.section-head .kicker{color:var(--gold);font-weight:700;font-size:13.5px;letter-spacing:1.5px;display:flex;align-items:center;gap:10px;text-transform:uppercase}
+.section-head .kicker::after{content:"";width:38px;height:2px;background:var(--gold)}
+.section-head h2{font-size:clamp(26px,3.6vw,40px);color:var(--navy);margin-top:8px;line-height:1.4}
+.section-head p{color:var(--muted);max-width:640px;margin-top:10px;font-size:16px}
+.alt{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+
+/* ===== Cards ===== */
+.grid{display:grid;gap:22px}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+.grid-4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--white);border:1px solid var(--line);border-radius:6px;padding:28px 24px;transition:box-shadow .3s,transform .3s,border-color .3s;position:relative;overflow:hidden}
+.alt .card{background:var(--ivory)}
+.card:hover{box-shadow:var(--shadow);transform:translateY(-4px);border-color:var(--gold-soft)}
+.card::before{content:"";position:absolute;inset-inline-start:0;top:0;bottom:0;width:3px;background:var(--gold);transform:scaleY(0);transform-origin:top;transition:transform .3s}
+.card:hover::before{transform:scaleY(1)}
+.card .icon{width:48px;height:48px;margin-bottom:16px;color:var(--gold);background:rgba(184,144,46,.1);border-radius:50%;padding:11px}
+.card h3{color:var(--navy);font-size:21px;margin-bottom:10px;line-height:1.5}
+.card p{color:#555;font-size:15.5px;line-height:1.85}
+.card .more{color:var(--gold);font-weight:700;font-size:14px;margin-top:14px;display:inline-block;cursor:pointer;border-bottom:1px solid transparent;transition:border-color .2s}
+.card .more:hover{border-bottom-color:var(--gold)}
+
+/* ===== Method strip ===== */
+.method{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.method::before{content:"";position:absolute;top:-40px;right:-40px;width:300px;height:300px;background:radial-gradient(circle,rgba(184,144,46,.15),transparent 70%);border-radius:50%}
+.method .section-head h2{color:#fff}
+.method-item{border-inline-start:2px solid var(--gold);padding:6px 20px 6px 0;position:relative}
+.method-item .num{position:absolute;inset-inline-start:-14px;top:0;background:var(--navy);color:var(--gold);font-family:'Amiri',serif;font-weight:700;font-size:14px;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:1.5px solid var(--gold)}
+body.en .method-item .num{font-family:'Playfair Display',serif}
+.method-item h3{color:var(--gold-light);font-size:20px;margin-bottom:6px}
+.method-item p{color:#C9D1DF;font-size:15.5px}
+
+/* ===== Blog ===== */
+.post{background:var(--white);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .3s,transform .3s}
+.post:hover{box-shadow:var(--shadow);transform:translateY(-3px)}
+.post .tag{background:var(--navy);color:var(--gold-light);font-size:12.5px;font-weight:700;padding:5px 14px;align-self:flex-start;border-radius:0 0 6px 0}
+.post .body{padding:22px 24px 26px;display:flex;flex-direction:column;flex:1}
+.post h3{color:var(--navy);font-size:18.5px;line-height:1.6;margin-bottom:10px}
+.post p{font-size:14.5px;color:#555;flex:1;line-height:1.8}
+.post .disclaimer{font-size:12px;color:var(--muted);border-top:1px dashed var(--line);margin-top:14px;padding-top:10px}
+
+/* ===== About ===== */
+.about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:start}
+.values li{margin-bottom:12px;padding-inline-start:28px;position:relative;list-style:none}
+.values li::before{content:"⚖";position:absolute;inset-inline-start:0;color:var(--gold);font-size:18px}
+.panel{background:var(--white);border:1px solid var(--line);border-radius:6px;padding:28px}
+.panel.navy{background:var(--navy);color:#D8DEE9;border:none}
+.panel.navy h3{color:var(--gold-light)}
+.team-tier{margin-bottom:34px}
+.tier-head{display:flex;align-items:center;gap:14px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--gold-soft)}
+.tier-badge{background:var(--gold);color:#fff;padding:5px 14px;border-radius:3px;font-weight:700;font-size:13.5px;letter-spacing:.5px}
+.tier-head h3{color:var(--navy);font-size:20px}
+.team-card{display:flex;gap:14px;align-items:center;background:var(--white);border:1px solid var(--line);border-radius:6px;padding:18px 20px;transition:border-color .3s,box-shadow .3s}
+.team-card:hover{border-color:var(--gold);box-shadow:var(--shadow)}
+.team-card .avatar{width:54px;height:54px;border-radius:50%;background:var(--navy);color:var(--gold-light);display:flex;align-items:center;justify-content:center;font-family:'Amiri',serif;font-size:22px;font-weight:700;flex:none}
+body.en .team-card .avatar{font-family:'Playfair Display',serif}
+.team-card h4{color:var(--navy);font-size:16.5px;margin-bottom:2px}
+.team-card span{color:var(--muted);font-size:13.5px}
+
+/* ===== Contact ===== */
+.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:start}
+form .field{margin-bottom:16px}
+form label{display:block;font-weight:700;color:var(--navy);margin-bottom:6px;font-size:14.5px}
+form input,form select,form textarea{width:100%;padding:12px 14px;border:1px solid #D7D0BF;border-radius:5px;font-family:inherit;font-size:15.5px;background:#fff;color:var(--ink)}
+form input:focus,form select:focus,form textarea:focus{outline:2px solid var(--gold);border-color:var(--gold)}
+.privacy-note{font-size:13px;color:var(--muted);margin:10px 0 16px}
+.info-line{display:flex;gap:12px;margin-bottom:16px;align-items:flex-start}
+.info-line .ic{color:var(--gold);font-size:20px;flex:none;margin-top:2px;width:36px;height:36px;background:rgba(184,144,46,.1);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.info-line a{color:var(--navy);font-weight:700;word-break:break-word}
+.info-line a:hover{color:var(--gold)}
+
+/* ===== FAQ ===== */
+.faq{background:var(--ivory-2)}
+.faq-item{background:var(--white);border:1px solid var(--line);border-radius:6px;margin-bottom:12px;overflow:hidden}
+.faq-q{padding:18px 22px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:700;color:var(--navy);font-size:16px}
+.faq-q:hover{background:var(--ivory)}
+.faq-q::after{content:"+";color:var(--gold);font-size:22px;font-weight:300;transition:transform .25s}
+.faq-item.open .faq-q::after{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .25s;padding:0 22px;color:#555;font-size:15px}
+.faq-item.open .faq-a{max-height:300px;padding:0 22px 18px}
+
+/* ===== Resources (Important links) ===== */
+.resources{background:var(--ivory)}
+.res-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.res-cat{background:var(--white);border:1px solid var(--line);border-radius:6px;padding:24px;transition:box-shadow .3s,transform .3s}
+.res-cat:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
+.res-cat h3{color:var(--navy);font-size:18px;margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--gold);display:flex;align-items:center;gap:8px}
+.res-cat h3 .ic{color:var(--gold);font-size:18px}
+.res-cat ul{list-style:none}
+.res-cat li{margin-bottom:8px;padding:7px 10px;background:var(--ivory-2);border-radius:4px;transition:background .2s}
+.res-cat li:hover{background:var(--gold-soft)}
+.res-cat a{color:var(--navy);font-size:14.5px;display:flex;justify-content:space-between;align-items:center;font-weight:500}
+.res-cat a::after{content:"↗";color:var(--gold);font-size:14px;opacity:.7}
+body[dir="ltr"] .res-cat a::after{content:"↗"}
+
+/* ===== CTA band ===== */
+.cta-band{background:linear-gradient(135deg,var(--navy-deep),var(--navy-2));color:#fff;text-align:center;position:relative;overflow:hidden}
+.cta-band::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 50%,rgba(184,144,46,.15),transparent 60%)}
+.cta-band .container{position:relative;z-index:2}
+.cta-band h2{font-size:clamp(24px,3.2vw,36px);margin-bottom:12px;color:#fff}
+.cta-band p{color:#C9D1DF;margin-bottom:28px;font-size:17px}
+
+/* ===== Footer ===== */
+footer{background:#0B1424;color:#9FA9BC;font-size:14.5px}
+footer .container{padding:50px 22px 24px}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:34px;margin-bottom:34px}
+footer h4{color:var(--gold-light);font-family:'Amiri',serif;font-size:18px;margin-bottom:14px}
+body.en footer h4{font-family:'Playfair Display',serif}
+footer a:hover{color:#fff}
+footer .links a{display:block;margin-bottom:8px;font-size:14px}
+.f-bottom{border-top:1px solid #1F2A42;padding-top:18px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:13px}
+
+/* ===== Floating buttons ===== */
+.float-wrap{position:fixed;bottom:20px;inset-inline-start:20px;display:flex;flex-direction:column;gap:12px;z-index:60}
+.float-btn{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.28);color:#fff;font-size:24px;transition:transform .2s}
+.float-btn.wa{background:#25D366}
+.float-btn.tel{background:var(--gold)}
+.float-btn.mail{background:var(--navy)}
+.float-btn:hover{transform:scale(1.08)}
+
+/* ===== Responsive ===== */
+@media (max-width:1000px){
+  .grid-4{grid-template-columns:repeat(2,1fr)}
+  .res-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:900px){
+  .grid-3{grid-template-columns:repeat(2,1fr)}
+  .about-grid,.contact-grid{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:1fr 1fr}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .grid-3,.grid-2,.grid-4,.res-grid{grid-template-columns:1fr}
+  nav.menu{display:none;position:absolute;top:100%;inset-inline:0;background:var(--white);flex-direction:column;align-items:stretch;padding:10px 16px 16px;border-bottom:3px solid var(--gold);box-shadow:0 12px 24px rgba(0,0,0,.12)}
+  nav.menu.open{display:flex}
+  nav.menu a{padding:12px 10px;border-bottom:1px solid var(--line)}
+  .burger{display:block}
+  .hero .container{padding:60px 22px 68px}
+  .f-grid{grid-template-columns:1fr}
+  .topbar .left span:not(:first-child){display:none}
+  section{padding:54px 0}
+}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+
+/* RTL fixes when in English */
+body[dir="ltr"]{direction:ltr;text-align:left}
+body[dir="ltr"] .info-line{text-align:left}
+body[dir="ltr"] .float-wrap{inset-inline-start:auto;inset-inline-end:20px;left:auto;right:20px}
+</style>
+</head>
+<body>
+
+<!-- شريط علوي -->
+<div class="topbar">
+  <div class="container">
+    <div class="left">
+      <span>📍 <span data-i18n="addr">٩١ عمارات الفتح – حي السفارات – مدينة نصر – القاهرة (الرمز البريدي 11816)</span></span>
+      <span>📞 <a href="tel:01146538509">01146538509</a> – <a href="tel:01101100381">01101100381</a></span>
+      <span>✉ <a href="mailto:JusticeLawFirm.aly@gmail.com">JusticeLawFirm.aly@gmail.com</a></span>
+    </div>
+    <button class="lang-switch" id="langBtn" onclick="toggleLang()">EN</button>
+  </div>
+</div>
+
+<!-- الهيدر -->
+<header>
+  <div class="container nav">
+    <a class="brand" href="#" onclick="go('home');return false;">
+      <svg class="mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#D6B45C"/>
+            <stop offset="100%" stop-color="#A37D24"/>
+          </linearGradient>
+        </defs>
+        <circle cx="32" cy="32" r="30" fill="#16243D" stroke="url(#goldGrad)" stroke-width="2"/>
+        <circle cx="32" cy="32" r="25" stroke="#B8902E" stroke-width="1" fill="none" opacity=".5"/>
+        <path d="M32 14v34M20 22h24M24 48h16" stroke="#D6B45C" stroke-width="2" stroke-linecap="round"/>
+        <path d="M20 22l-7 12h14l-7-12zM44 22l-7 12h14l-7-12z" stroke="#D6B45C" stroke-width="1.8" fill="none" stroke-linejoin="round"/>
+        <path d="M13 34a7 7 0 0014 0M37 34a7 7 0 0014 0" stroke="#D6B45C" stroke-width="1.8" fill="none"/>
+        <circle cx="32" cy="14" r="2" fill="#D6B45C"/>
+      </svg>
+      <span class="brand-text">
+        <span class="ar" data-i18n="brand">العَدل للمحاماة والاستشارات القانونية</span><br>
+        <span class="en">JUSTICE LAW FIRM</span>
+      </span>
+    </a>
+    <button class="burger" aria-label="القائمة" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+    <nav class="menu" id="menu" aria-label="التنقل الرئيسي">
+      <a href="#" data-page="home" class="active" onclick="go('home');return false;" data-i18n="nav.home">الرئيسية</a>
+      <a href="#" data-page="about" onclick="go('about');return false;" data-i18n="nav.about">عن المؤسسة</a>
+      <a href="#" data-page="practice" onclick="go('practice');return false;" data-i18n="nav.practice">مجالات الممارسة</a>
+      <a href="#" data-page="blog" onclick="go('blog');return false;" data-i18n="nav.blog">المركز المعرفي</a>
+      <a href="#" data-page="resources" onclick="go('resources');return false;" data-i18n="nav.resources">روابط مهمة</a>
+      <a href="#" data-page="contact" onclick="go('contact');return false;" data-i18n="nav.contact">اتصل بنا</a>
+      <a href="#" class="cta-btn" onclick="go('contact');return false;" data-i18n="nav.cta">احجز استشارتك</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= الرئيسية ================= -->
+<div class="page active" id="page-home">
+
+  <div class="hero">
+    <svg class="hero-scales" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+      <path d="M32 6v44M14 16h36M22 54h20" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+      <path d="M14 16L5 32h18l-9-16zM50 16l-9 16h18l-9-16z" stroke="#fff" stroke-width="1.4" fill="none"/>
+      <path d="M5 32a9 9 0 0018 0M41 32a9 9 0 0018 0" stroke="#fff" stroke-width="1.4" fill="none"/>
+    </svg>
+    <div class="container">
+      <div class="eyebrow" data-i18n="hero.eyebrow">مؤسسة العَدل للمحاماة والاستشارات القانونية</div>
+      <h1 data-i18n-html="hero.title">حيث تُدار حقوقكم<br><em>بعلمٍ وأمانة</em></h1>
+      <p class="lead" data-i18n="hero.lead">مؤسسة قانونية مصرية تجمع بين أصالة المهنة ومواكبة التشريعات الحديثة. نقدم خدمات المحاماة والاستشارات أمام محكمة النقض ومحاكم الاستئناف العالي والمحاكم الابتدائية، في القضايا الجنائية والمدنية والتجارية والعقارية والإدارية والعمالية والضريبية وقضايا الأسرة.</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#" onclick="go('contact');return false;" data-i18n="hero.cta1">اطلب استشارتك القانونية</a>
+        <a class="btn btn-ghost" href="https://wa.me/201146538509" target="_blank" rel="noopener" data-i18n="hero.cta2">تواصل عبر واتساب</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat"><div class="num">٤+</div><div class="label" data-i18n="stat.tiers">درجات المحاكم: نقض – استئناف – ابتدائي</div></div>
+        <div class="stat"><div class="num">١٢+</div><div class="label" data-i18n="stat.fields">مجالاً قانونياً متخصصاً</div></div>
+        <div class="stat"><div class="num">٢٤/٧</div><div class="label" data-i18n="stat.support">استجابة سريعة عبر واتساب والبريد</div></div>
+        <div class="stat"><div class="num">١٠٠٪</div><div class="label" data-i18n="stat.confid">التزام كامل بالسرية المهنية</div></div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="kicker" data-i18n="about.kicker">من نحن</div>
+        <h2 data-i18n="about.title">محاماةٌ تبدأ من فهم واقعكم قبل نصوص القانون</h2>
+      </div>
+      <div class="about-grid">
+        <div class="reveal">
+          <p data-i18n="about.p1">تأسست مؤسسة العَدل للمحاماة والاستشارات القانونية على يد الأستاذ/ أحمد علي – المحامي، إيماناً بأن الخدمة القانونية الرشيدة تبدأ من فهمٍ دقيق لواقع العميل قبل نصوص القانون. نعمل من مقرنا بمدينة نصر بالقاهرة على خدمة الشركات والأفراد داخل مصر وخارجها.</p>
+          <p style="margin-top:14px" data-i18n="about.p2">نؤمن بأن دورنا لا يقتصر على الترافع أمام المحاكم بمختلف درجاتها، بل يمتد إلى الوقاية القانونية: صياغة العقود المحكمة، وهيكلة المعاملات، والدفاع الجنائي الرصين، وتقديم الرأي القانوني قبل اتخاذ القرار.</p>
+          <a class="btn btn-gold" style="margin-top:24px" href="#" onclick="go('about');return false;" data-i18n="about.more">تعرّف على المؤسسة</a>
+        </div>
+        <div class="panel navy reveal">
+          <h3 class="display" style="font-size:21px;margin-bottom:10px" data-i18n="about.vision.t">رؤيتنا</h3>
+          <p style="font-size:15px" data-i18n="about.vision.p">أن نكون بيتَ خبرة قانونياً موثوقاً يطمئن إليه العميل المصري والأجنبي، يجمع بين رسوخ تقاليد المحاماة المصرية والمواكبة الدقيقة لحركة التشريع والقضاء.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="kicker" data-i18n="prac.kicker">مجالات الممارسة</div>
+        <h2 data-i18n="prac.title">تخصصاتنا القانونية</h2>
+        <p data-i18n="prac.sub">تغطية شاملة لفروع القانون المصري، مع صفحة مستقلة لكل تخصص.</p>
+      </div>
+      <div class="grid grid-3" id="home-practices"></div>
+      <div style="text-align:center;margin-top:30px">
+        <a class="btn btn-gold" href="#" onclick="go('practice');return false;" data-i18n="prac.all">عرض جميع التخصصات</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="method">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="kicker" style="color:var(--gold-light)" data-i18n="method.kicker">منهجيتنا في العمل</div>
+        <h2 data-i18n="method.title">أربعة التزامات لا نحيد عنها</h2>
+      </div>
+      <div class="grid grid-2">
+        <div class="method-item reveal"><div class="num">١</div><h3 data-i18n="m1.t">الدراسة قبل الرأي</h3><p data-i18n="m1.p">لا نُبدي رأياً قانونياً قبل الإحاطة الكاملة بالمستندات والوقائع.</p></div>
+        <div class="method-item reveal"><div class="num">٢</div><h3 data-i18n="m2.t">المصارحة</h3><p data-i18n="m2.p">نعرض على العميل فرص موقفه ومخاطره بأمانة، ولا نَعِد بنتائج؛ فالقضاء وحده صاحب الكلمة.</p></div>
+        <div class="method-item reveal"><div class="num">٣</div><h3 data-i18n="m3.t">السرية المهنية</h3><p data-i18n="m3.p">تخضع جميع البيانات والمستندات لالتزام السرية المهنية المقرر قانوناً.</p></div>
+        <div class="method-item reveal"><div class="num">٤</div><h3 data-i18n="m4.t">المتابعة والإبلاغ</h3><p data-i18n="m4.p">تقارير دورية للعميل بتطورات ملفه أولاً بأول، دون حاجة منه إلى السؤال.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="kicker" data-i18n="blog.kicker">المركز المعرفي</div>
+        <h2 data-i18n="blog.title">من واجبنا المهني نشر الوعي القانوني</h2>
+        <p data-i18n="blog.sub">مقالات مبسطة تشرح المستجدات التشريعية المصرية للمواطن والمستثمر.</p>
+      </div>
+      <div class="grid grid-3" id="home-posts"></div>
+      <div style="text-align:center;margin-top:30px">
+        <a class="btn btn-gold" href="#" onclick="go('blog');return false;" data-i18n="blog.all">تصفح المركز المعرفي</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="kicker" data-i18n="faq.kicker">أسئلة شائعة</div>
+        <h2 data-i18n="faq.title">إجابات سريعة على ما يهمكم</h2>
+      </div>
+      <div id="faq-list"></div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2 class="display" data-i18n="cta.t">الخطوة القانونية الصحيحة تبدأ باستشارة</h2>
+      <p data-i18n="cta.p">يسعدنا أن نستمع إليكم ونضع خبرتنا في خدمتكم.</p>
+      <a class="btn btn-gold" href="#" onclick="go('contact');return false;" data-i18n="cta.b1">احجز موعدك</a>
+      &nbsp;
+      <a class="btn btn-ghost" href="tel:01146538509" data-i18n="cta.b2">اتصل الآن: 01146538509</a>
+    </div>
+  </section>
+
+</div>
+
+<!-- ================= عن المؤسسة ================= -->
+<div class="page" id="page-about">
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker" data-i18n="ab.kicker">عن المؤسسة</div>
+        <h2 data-i18n="ab.title">قصة تأسيس وفلسفة عمل</h2>
+      </div>
+      <div class="about-grid">
+        <div>
+          <p data-i18n="ab.p1">قامت مؤسسة العَدل للمحاماة والاستشارات القانونية على قناعة راسخة بأن المحاماة رسالة قبل أن تكون مهنة؛ فهي شريكة القضاء في تحقيق العدالة، وخط الدفاع الأول عن حقوق الأفراد واستقرار معاملات الشركات.</p>
+          <p style="margin-top:14px" data-i18n="ab.p2">من هذا المنطلق، نزاوج في عملنا بين خبرة الممارسة أمام محكمة النقض ومحاكم الاستئناف العالي والمحاكم الابتدائية والإدارية، والمتابعة اليومية لحركة التشريع المصري وأحكام محكمة النقض والمحكمة الدستورية العليا.</p>
+          <h3 class="display" style="color:var(--navy);font-size:23px;margin:26px 0 12px" data-i18n="ab.values">قيمنا</h3>
+          <ul class="values">
+            <li data-i18n-html="ab.v1"><strong>الأمانة:</strong> في الرأي والتقدير وبيان فرص الموقف ومخاطره.</li>
+            <li data-i18n-html="ab.v2"><strong>الدقة:</strong> في البحث والصياغة وتأصيل الحجج القانونية.</li>
+            <li data-i18n-html="ab.v3"><strong>السرية:</strong> التزام مطلق تجاه بيانات العملاء ومستنداتهم.</li>
+            <li data-i18n-html="ab.v4"><strong>المواكبة:</strong> متابعة مستمرة للتعديلات التشريعية وأحدث المبادئ القضائية.</li>
+            <li data-i18n-html="ab.v5"><strong>الكفاءة المهنية:</strong> الترافع بأعلى درجات المهارة في جميع درجات التقاضي.</li>
+          </ul>
+        </div>
+        <div>
+          <div class="panel navy" style="margin-bottom:18px">
+            <h3 class="display" style="font-size:20px;margin-bottom:8px" data-i18n="ab.mission.t">رسالتنا</h3>
+            <p style="font-size:15px" data-i18n="ab.mission.p">تقديم خدمة قانونية مدروسة تقوم على الفهم العميق للوقائع، والتأصيل القانوني السليم، والمصارحة الكاملة، مع الالتزام المطلق بالسرية وآداب المهنة.</p>
+          </div>
+          <div class="panel">
+            <h3 class="display" style="color:var(--navy);font-size:20px;margin-bottom:8px" data-i18n="ab.commit.t">التزامنا المهني</h3>
+            <p style="font-size:15px" data-i18n="ab.commit.p">تلتزم المؤسسة في كل أعمالها بأحكام قانون المحاماة رقم ١٧ لسنة ١٩٨٣ وميثاق آداب المهنة، ولا تعد عملاءها بنتائج، ولا تفصح عن أي بيانات تخص موكليها.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team tiers -->
+      <div class="section-head" style="margin-top:60px">
+        <div class="kicker" data-i18n="team.kicker">الفريق القانوني</div>
+        <h2 data-i18n="team.title">فريق عمل بدرجات تقاضي متكاملة</h2>
+        <p data-i18n="team.sub">يضم فريق المؤسسة محامين بدرجات مهنية متعددة لتغطية جميع درجات التقاضي والمحاكم المتخصصة.</p>
+      </div>
+
+      <div class="team-tier">
+        <div class="tier-head"><span class="tier-badge" data-i18n="team.t1">الدرجة الأولى</span><h3 data-i18n="team.t1n">محامون مقبولون أمام محكمة النقض والإدارية العليا</h3></div>
+        <div class="grid grid-3">
+          <div class="team-card"><div class="avatar">⚖</div><div><h4 data-i18n="team.member1">محامٍ بالنقض</h4><span data-i18n="team.member1s">القضايا التي تتطلب طعناً أمام محكمة النقض</span></div></div>
+          <div class="team-card"><div class="avatar">⚖</div><div><h4 data-i18n="team.member2">محامٍ بالإدارية العليا</h4><span data-i18n="team.member2s">المنازعات الإدارية والطعون أمام مجلس الدولة</span></div></div>
+          <div class="team-card"><div class="avatar">⚖</div><div><h4 data-i18n="team.member3">محامٍ دستوري</h4><span data-i18n="team.member3s">الدفع بعدم الدستورية أمام المحكمة الدستورية العليا</span></div></div>
+        </div>
+      </div>
+
+      <div class="team-tier">
+        <div class="tier-head"><span class="tier-badge" data-i18n="team.t2">الدرجة الثانية</span><h3 data-i18n="team.t2n">محامون مقبولون أمام الاستئناف العالي</h3></div>
+        <div class="grid grid-3">
+          <div class="team-card"><div class="avatar">أ</div><div><h4 data-i18n="team.founder">الأستاذ/ أحمد علي</h4><span data-i18n="team.founders">المحامي المؤسس – استئناف عالٍ</span></div></div>
+          <div class="team-card"><div class="avatar">⚖</div><div><h4 data-i18n="team.member4">محامون بالاستئناف</h4><span data-i18n="team.member4s">قضايا الجنايات والمدني والتجاري والعمالي</span></div></div>
+          <div class="team-card"><div class="avatar">⚖</div><div><h4 data-i18n="team.member5">محامون بمحاكم الأسرة</h4><span data-i18n="team.member5s">قضايا الأحوال الشخصية ومحاكم الأسرة</span></div></div>
+        </div>
+      </div>
+
+      <div class="team-tier">
+        <div class="tier-head"><span class="tier-badge" data-i18n="team.t3">الدرجة الثالثة</span><h3 data-i18n="team.t3n">محامون أمام المحاكم الابتدائية والباحثون القانونيون</h3></div>
+        <div class="grid grid-3">
+          <div class="team-card"><div class="avatar">⚖</div><div><h4 data-i18n="team.member6">محامون ابتدائي</h4><span data-i18n="team.member6s">متابعة الجلسات وإعداد المذكرات</span></div></div>
+          <div class="team-card"><div class="avatar">📚</div><div><h4 data-i18n="team.member7">باحثون قانونيون</h4><span data-i18n="team.member7s">البحث التشريعي والقضائي وإعداد الدراسات</span></div></div>
+          <div class="team-card"><div class="avatar">📋</div><div><h4 data-i18n="team.member8">القسم الإداري</h4><span data-i18n="team.member8s">متابعة الملفات والمواعيد والتنسيق</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= مجالات الممارسة ================= -->
+<div class="page" id="page-practice">
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker" data-i18n="pp.kicker">مجالات الممارسة</div>
+        <h2 data-i18n="pp.title">عرض موسوعي لتخصصاتنا</h2>
+        <p data-i18n="pp.sub">نضع بين أيديكم نطاق عملنا في كل مجال، إعلاءً للشفافية ونشراً للوعي القانوني.</p>
+      </div>
+      <div class="grid grid-2" id="practice-list"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= المركز المعرفي ================= -->
+<div class="page" id="page-blog">
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker" data-i18n="bp.kicker">المركز المعرفي</div>
+        <h2 data-i18n="bp.title">المدونة القانونية</h2>
+        <p data-i18n="bp.sub">مقالات للتوعية القانونية العامة، تُراجع دورياً لمواكبة التعديلات التشريعية في مصر.</p>
+      </div>
+      <div class="grid grid-3" id="blog-list"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= روابط مهمة ================= -->
+<div class="page" id="page-resources">
+  <section class="resources">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker" data-i18n="rp.kicker">روابط مهمة</div>
+        <h2 data-i18n="rp.title">دليل المواقع الرسمية لذوي الشأن القانوني</h2>
+        <p data-i18n="rp.sub">روابط مباشرة للجهات القضائية والتشريعية والتنفيذية المصرية ذات الصلة بالنشاط القانوني، مرتبة لتسهيل وصول المحامين والمتقاضين والباحثين.</p>
+      </div>
+      <div class="res-grid" id="res-list"></div>
+      <p style="margin-top:30px;font-size:13.5px;color:var(--muted);text-align:center" data-i18n="rp.note">* الروابط مقدمة للاسترشاد، والمؤسسة غير مسؤولة عن محتوى المواقع الخارجية أو توقف خدماتها.</p>
+    </div>
+  </section>
+</div>
+
+<!-- ================= اتصل بنا ================= -->
+<div class="page" id="page-contact">
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker" data-i18n="cp.kicker">اتصل بنا</div>
+        <h2 data-i18n="cp.title">احجز استشارتك القانونية</h2>
+        <p data-i18n="cp.sub">اختر وسيلة التواصل الأنسب لك: واتساب، بريد إلكتروني، اتصال هاتفي، أو نموذج الاستشارة.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="panel">
+          <form id="consultForm" onsubmit="return sendForm(event)">
+            <div class="field"><label for="fname" data-i18n="f.name">الاسم</label><input id="fname" required autocomplete="name"></div>
+            <div class="field"><label for="fphone" data-i18n="f.phone">رقم الهاتف</label><input id="fphone" type="tel" required autocomplete="tel"></div>
+            <div class="field"><label for="femail" data-i18n="f.email">البريد الإلكتروني (اختياري)</label><input id="femail" type="email" autocomplete="email"></div>
+            <div class="field">
+              <label for="ftype" data-i18n="f.type">نوع الموضوع</label>
+              <select id="ftype">
+                <option data-i18n="f.opt1">القانون الجنائي</option>
+                <option data-i18n="f.opt2">القانون التجاري وتأسيس الشركات</option>
+                <option data-i18n="f.opt3">العقارات والتسجيل العقاري</option>
+                <option data-i18n="f.opt4">القضايا المدنية</option>
+                <option data-i18n="f.opt5">قانون العمل</option>
+                <option data-i18n="f.opt6">الضرائب</option>
+                <option data-i18n="f.opt7">الأحوال الشخصية والأسرة</option>
+                <option data-i18n="f.opt8">القضاء الإداري</option>
+                <option data-i18n="f.opt9">التحكيم وتسوية المنازعات</option>
+                <option data-i18n="f.opt10">الملكية الفكرية</option>
+                <option data-i18n="f.opt11">البنوك والتمويل</option>
+                <option data-i18n="f.opt12">موضوع آخر</option>
+              </select>
+            </div>
+            <div class="field"><label for="fchannel" data-i18n="f.channel">طريقة التواصل المفضّلة</label>
+              <select id="fchannel">
+                <option value="wa" data-i18n="f.ch1">واتساب</option>
+                <option value="email" data-i18n="f.ch2">البريد الإلكتروني</option>
+                <option value="phone" data-i18n="f.ch3">اتصال هاتفي</option>
+              </select>
+            </div>
+            <div class="field"><label for="fmsg" data-i18n="f.msg">نبذة عن الاستفسار</label><textarea id="fmsg" rows="4" required></textarea></div>
+            <p class="privacy-note" data-i18n="f.privacy">بإرسال هذا النموذج فإنك توافق على معالجة بياناتك لغرض التواصل بشأن طلبك فقط، وفقاً لقانون حماية البيانات الشخصية رقم ١٥١ لسنة ٢٠٢٠ والتزام السرية المهنية.</p>
+            <button class="btn btn-gold" type="submit" data-i18n="f.submit">إرسال الطلب</button>
+          </form>
+        </div>
+        <div>
+          <div class="info-line"><span class="ic">📍</span><div><strong data-i18n="ci.addr">العنوان</strong><br><span data-i18n="ci.addr.v">٩١ عمارات الفتح – حي السفارات – مدينة نصر – القاهرة<br>الرمز البريدي: 11816</span></div></div>
+          <div class="info-line"><span class="ic">📞</span><div><strong data-i18n="ci.tel">الهاتف</strong><br><a href="tel:01146538509">01146538509</a> – <a href="tel:01101100381">01101100381</a></div></div>
+          <div class="info-line"><span class="ic">💬</span><div><strong data-i18n="ci.wa">واتساب</strong><br><a href="https://wa.me/201146538509" target="_blank" rel="noopener" data-i18n="ci.wa.v">تواصل مباشر عبر واتساب</a></div></div>
+          <div class="info-line"><span class="ic">✉</span><div><strong data-i18n="ci.email">البريد الإلكتروني</strong><br><a href="mailto:JusticeLawFirm.aly@gmail.com">JusticeLawFirm.aly@gmail.com</a></div></div>
+          <div class="info-line"><span class="ic">🕘</span><div><strong data-i18n="ci.hours">ساعات العمل</strong><br><span data-i18n="ci.hours.v">السبت – الخميس: من ١٠ صباحاً حتى ٨ مساءً</span></div></div>
+          <div class="panel navy" style="margin-top:8px">
+            <h3 class="display" style="font-size:19px;margin-bottom:8px" data-i18n="ci.corp.t">للشركات والمستثمرين</h3>
+            <p style="font-size:14.5px" data-i18n="ci.corp.p">تتوفر ترتيبات للاستشارة الدورية والمستشار القانوني الدائم. يُرجى الإشارة لذلك في طلبكم.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</main>
+
+<!-- الفوتر -->
+<footer>
+  <div class="container">
+    <div class="f-grid">
+      <div>
+        <h4 data-i18n="ft.about">العَدل للمحاماة والاستشارات القانونية</h4>
+        <p data-i18n="ft.about.p">مؤسسة قانونية مصرية تقدم خدمات المحاماة والاستشارات للشركات والمستثمرين والأفراد، بمنهج يقوم على الدراسة والأمانة والسرية.</p>
+      </div>
+      <div class="links">
+        <h4 data-i18n="ft.links">روابط سريعة</h4>
+        <a href="#" onclick="go('home');return false;" data-i18n="nav.home">الرئيسية</a>
+        <a href="#" onclick="go('about');return false;" data-i18n="nav.about">عن المؤسسة</a>
+        <a href="#" onclick="go('practice');return false;" data-i18n="nav.practice">مجالات الممارسة</a>
+        <a href="#" onclick="go('blog');return false;" data-i18n="nav.blog">المركز المعرفي</a>
+        <a href="#" onclick="go('resources');return false;" data-i18n="nav.resources">روابط مهمة</a>
+        <a href="#" onclick="go('contact');return false;" data-i18n="nav.contact">اتصل بنا</a>
+      </div>
+      <div class="links">
+        <h4 data-i18n="ft.official">جهات رسمية</h4>
+        <a href="https://www.cc.gov.eg" target="_blank" rel="noopener" data-i18n="ft.cc">محكمة النقض المصرية</a>
+        <a href="https://www.cco.gov.eg" target="_blank" rel="noopener" data-i18n="ft.coc">مجلس الدولة</a>
+        <a href="https://www.moj.gov.eg" target="_blank" rel="noopener" data-i18n="ft.moj">وزارة العدل</a>
+        <a href="https://www.gafi.gov.eg" target="_blank" rel="noopener" data-i18n="ft.gafi">هيئة الاستثمار</a>
+        <a href="https://www.cabinet.gov.eg" target="_blank" rel="noopener" data-i18n="ft.cab">مجلس الوزراء</a>
+      </div>
+      <div>
+        <h4 data-i18n="ft.contact">بيانات التواصل</h4>
+        <p data-i18n="ft.addr">٩١ عمارات الفتح – حي السفارات – مدينة نصر – القاهرة</p>
+        <p data-i18n="ft.code">الرمز البريدي: 11816</p>
+        <p style="margin-top:8px"><a href="tel:01146538509">01146538509</a> – <a href="tel:01101100381">01101100381</a></p>
+        <p><a href="mailto:JusticeLawFirm.aly@gmail.com">JusticeLawFirm.aly@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <div>© <span id="year"></span> <span data-i18n="ft.rights">مؤسسة العَدل للمحاماة والاستشارات القانونية – جميع الحقوق محفوظة.</span></div>
+      <div data-i18n="ft.disc">محتوى هذا الموقع للتوعية القانونية العامة ولا يُعد استشارة قانونية.</div>
+    </div>
+  </div>
+</footer>
+
+<!-- أزرار عائمة -->
+<div class="float-wrap">
+  <a class="float-btn wa" href="https://wa.me/201146538509" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35zM12.04 21.79h-.01a9.87 9.87 0 01-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.83 9.83 0 01-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.83 9.83 0 016.99 2.9 9.82 9.82 0 012.89 7c0 5.45-4.44 9.87-9.89 9.87zm8.41-18.28A11.8 11.8 0 0012.04 0C5.46 0 .1 5.35.1 11.92c0 2.1.55 4.15 1.59 5.95L0 24l6.27-1.64a11.94 11.94 0 005.76 1.46h.01c6.58 0 11.93-5.35 11.93-11.92 0-3.18-1.24-6.18-3.52-8.39z"/></svg>
+  </a>
+  <a class="float-btn mail" href="mailto:JusticeLawFirm.aly@gmail.com" aria-label="Email" title="Email">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+  </a>
+  <a class="float-btn tel" href="tel:01146538509" aria-label="Call" title="Call">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z"/></svg>
+  </a>
+</div>
+
+<script>
+/* ============ Practices Data ============ */
+const practices = [
+ {ar:{t:"القانون الجنائي",s:"الدفاع في قضايا الجنح والجنايات، وحضور التحقيقات أمام النيابة العامة، والطعن بالنقض في الأحكام الجنائية.",
+   d:["الدفاع أمام محاكم الجنح والجنايات ومحكمة الجنايات المستأنفة.","حضور التحقيقات أمام النيابة العامة والنيابات المتخصصة (الأموال العامة – جرائم تقنية المعلومات – الإرهاب).","الطعن بالنقض في الأحكام الجنائية وفقاً لقانون الإجراءات الجنائية الجديد رقم ١ لسنة ٢٠٢٤.","قضايا الشيك بدون رصيد، النصب، خيانة الأمانة، التزوير، وجرائم الإنترنت.","قضايا الإفراج والإخلاء بضمان مالي وتدابير احترازية."]},
+  en:{t:"Criminal Law",s:"Defense in misdemeanor and felony cases, appearance before the Public Prosecution, and cassation appeals.",
+   d:["Defense before misdemeanor, felony and appellate felony courts.","Representation during investigations before the Public Prosecution and specialized prosecutions.","Cassation appeals under the new Criminal Procedure Law No. 1 of 2024.","Bounced cheques, fraud, breach of trust, forgery, and cybercrime cases.","Bail applications and precautionary measures."]}},
+
+ {ar:{t:"القانون التجاري وتأسيس الشركات",s:"تأسيس الشركات بأنواعها وهيكلة الكيانات، صياغة عقود الشركاء، والتمثيل في المنازعات التجارية وقضايا الأوراق التجارية.",
+   d:["تأسيس الشركات (مساهمة – ذات مسؤولية محدودة – شركة الشخص الواحد) أمام الهيئة العامة للاستثمار.","صياغة ومراجعة العقود التجارية واتفاقيات المساهمين والشركاء.","منازعات الشركات والأوراق التجارية (الشيك – الكمبيالة – السند الإذني).","الاندماج والاستحواذ وتعديلات النظام الأساسي.","قانون حماية المنافسة ومنع الممارسات الاحتكارية رقم ٣ لسنة ٢٠٠٥."]},
+  en:{t:"Commercial Law & Companies",s:"Company formation, corporate structuring, drafting partner agreements, and representing clients in commercial disputes.",
+   d:["Formation of all company types before the General Authority for Investment.","Drafting and review of commercial contracts and shareholders' agreements.","Disputes over negotiable instruments (cheques, bills of exchange).","Mergers, acquisitions, and amendments to articles of association.","Competition Law No. 3 of 2005 and anti-monopoly practices."]}},
+
+ {ar:{t:"العقارات والتسجيل العقاري",s:"فحص الملكية والتعاقدات العقارية، دعاوى صحة التوقيع وصحة ونفاذ، إجراءات الشهر العقاري، ومنازعات الإيجارات.",
+   d:["الفحص القانوني للملكية قبل الشراء (Due Diligence عقاري).","صياغة عقود البيع والبيع بالملكية المجردة وحق الانتفاع.","دعاوى صحة التوقيع وصحة ونفاذ العقود وإجراءات الشهر العقاري.","منازعات الإيجارات القديمة وتطبيقات القانون رقم ١٦٤ لسنة ٢٠٢٥.","قضايا التعدي وإثبات الحالة ووضع اليد."]},
+  en:{t:"Real Estate & Property Registration",s:"Title due diligence, real estate contracts, registration procedures, and tenancy disputes.",
+   d:["Real estate due diligence prior to purchase.","Drafting sale contracts, bare ownership, and usufruct agreements.","Authentication of signatures and validity/enforceability lawsuits.","Old rent disputes under Law No. 164 of 2025.","Trespass actions and adverse possession matters."]}},
+
+ {ar:{t:"القضايا المدنية",s:"دعاوى التعويض والمسؤولية المدنية، تنفيذ الالتزامات التعاقدية، والمطالبات المالية بمختلف درجات التقاضي.",
+   d:["دعاوى التعويض عن المسؤولية العقدية والتقصيرية.","المطالبات المالية وإجراءات التنفيذ الجبري وأوامر الأداء.","الصلح والتسويات الودية وتوثيقها قانوناً.","الترافع أمام المحاكم الابتدائية والاستئنافية والنقض.","دعاوى الإثراء بلا سبب والمسؤولية عن فعل الغير."]},
+  en:{t:"Civil Litigation",s:"Compensation claims, contractual enforcement, and monetary claims across all court levels.",
+   d:["Contractual and tortious liability compensation claims.","Monetary claims and enforcement proceedings.","Settlement and authentication of amicable agreements.","Litigation before first instance, appellate, and Court of Cassation.","Unjust enrichment and vicarious liability."]}},
+
+ {ar:{t:"قانون العمل",s:"صياغة عقود العمل ولوائح الجزاءات، تمثيل الشركات والعاملين في المنازعات العمالية، وتوفيق الأوضاع وفقاً لأحدث التعديلات.",
+   d:["توفيق أوضاع الشركات وفقاً لقانون العمل رقم ١٤ لسنة ٢٠٢٥.","صياغة عقود العمل ولوائح تنظيم العمل والجزاءات واعتمادها.","التحقيقات الإدارية وإجراءات الفصل التأديبي المشروعة.","منازعات الفصل التعسفي ومستحقات نهاية الخدمة.","المحاكم العمالية المتخصصة المستحدثة."]},
+  en:{t:"Labor Law",s:"Employment contracts, internal regulations, representation in labor disputes, and compliance with the new labor framework.",
+   d:["Corporate compliance with Labor Law No. 14 of 2025.","Drafting employment contracts and internal regulations.","Disciplinary investigations and lawful dismissal procedures.","Wrongful termination disputes and end-of-service entitlements.","Representation before the new specialized labor courts."]}},
+
+ {ar:{t:"الضرائب والجمارك",s:"الاستشارات الضريبية، التظلمات والطعون، وتسوية المنازعات مع مصلحة الضرائب والجمارك.",
+   d:["التظلمات والطعون أمام لجان الطعن الضريبي.","تسوية المنازعات في إطار حزم التيسيرات الضريبية لعام ٢٠٢٥.","الاستشارات الضريبية للشركات والمشروعات الصغيرة والمتوسطة.","ضريبة التصرفات العقارية وضريبة القيمة المضافة.","المنازعات الجمركية وفقاً لقانون الجمارك رقم ٢٠٧ لسنة ٢٠٢٠."]},
+  en:{t:"Tax & Customs",s:"Tax advisory, appeals, and settlement of disputes with the Tax and Customs Authorities.",
+   d:["Appeals before tax dispute committees.","Settlements under the 2025 tax facilitation packages.","Tax advisory for corporations and SMEs.","Real estate disposal tax and VAT matters.","Customs disputes under Law No. 207 of 2020."]}},
+
+ {ar:{t:"الأحوال الشخصية والأسرة",s:"قضايا الزواج والطلاق والنفقات والحضانة والميراث، أمام محاكم الأسرة المتخصصة.",
+   d:["دعاوى التطليق والخلع والنفقات بأنواعها.","قضايا الحضانة والرؤية والولاية والوصاية على القاصر.","دعاوى المواريث وقسمة التركات.","إثبات النسب وقضايا الزواج العرفي.","قانون الأحوال الشخصية للأقباط الأرثوذكس."]},
+  en:{t:"Family & Personal Status",s:"Marriage, divorce, custody, alimony, and inheritance matters before specialized family courts.",
+   d:["Divorce, khula, and alimony cases.","Child custody, visitation, and guardianship.","Inheritance and estate partition lawsuits.","Paternity and customary marriage cases.","Coptic Orthodox personal status law."]}},
+
+ {ar:{t:"القضاء الإداري",s:"الطعون أمام محاكم القضاء الإداري والمحكمة الإدارية العليا، والمنازعات مع الجهات الإدارية.",
+   d:["الطعن في القرارات الإدارية أمام محاكم القضاء الإداري.","دعاوى الإلغاء والتعويض ودعاوى التسوية.","منازعات العقود الإدارية (المقاولات – التوريد).","الطعون التأديبية للعاملين بالقطاع العام والحكومي.","الترافع أمام المحكمة الإدارية العليا."]},
+  en:{t:"Administrative Litigation",s:"Appeals before administrative courts and the Supreme Administrative Court, and disputes with public bodies.",
+   d:["Challenges to administrative decisions.","Annulment and compensation actions.","Administrative contracts disputes (construction, supply).","Disciplinary appeals for public sector employees.","Representation before the Supreme Administrative Court."]}},
+
+ {ar:{t:"التحكيم وتسوية المنازعات",s:"تمثيل الأطراف أمام هيئات التحكيم المحلية والدولية، وصياغة شروط واتفاقات التحكيم.",
+   d:["صياغة شرط ومشارطة التحكيم بما يحفظ مصالح العميل.","التمثيل أمام مركز القاهرة الإقليمي للتحكيم التجاري الدولي.","دعاوى بطلان أحكام التحكيم وتنفيذها.","الوساطة والتسوية الودية للمنازعات التجارية.","التحكيم في عقود الاستثمار وعقود الإنشاءات (FIDIC)."]},
+  en:{t:"Arbitration & ADR",s:"Representation before local and international arbitration tribunals.",
+   d:["Drafting arbitration clauses and agreements.","Representation before CRCICA.","Annulment and enforcement of arbitral awards.","Mediation and commercial dispute settlement.","Investment and construction arbitration (FIDIC)."]}},
+
+ {ar:{t:"الملكية الفكرية",s:"حماية العلامات التجارية وبراءات الاختراع وحقوق المؤلف، ومكافحة التعدي والتقليد.",
+   d:["تسجيل العلامات التجارية وبراءات الاختراع والنماذج الصناعية.","دعاوى التعدي على حقوق الملكية الفكرية والتقليد.","حماية حقوق المؤلف والحقوق المجاورة.","العقود المتعلقة بنقل التكنولوجيا والترخيص.","قانون حماية الملكية الفكرية رقم ٨٢ لسنة ٢٠٠٢."]},
+  en:{t:"Intellectual Property",s:"Protection of trademarks, patents, and copyright; anti-counterfeiting actions.",
+   d:["Trademark, patent, and industrial design registration.","IP infringement and counterfeiting litigation.","Copyright and neighboring rights protection.","Technology transfer and licensing agreements.","IP Protection Law No. 82 of 2002."]}},
+
+ {ar:{t:"البنوك والتمويل والصكوك",s:"الاستشارات في المنازعات البنكية وعقود التمويل والصكوك الإسلامية، وفقاً لقانون البنك المركزي.",
+   d:["المنازعات البنكية وعقود التسهيلات الائتمانية.","قانون البنك المركزي والجهاز المصرفي رقم ١٩٤ لسنة ٢٠٢٠.","عقود التمويل التأجيري والتخصيم (Leasing & Factoring).","الصكوك الإسلامية والتمويل المتوافق مع الشريعة.","غسل الأموال والامتثال (AML/KYC)."]},
+  en:{t:"Banking, Finance & Sukuk",s:"Banking disputes, financing agreements, and Islamic sukuk advisory.",
+   d:["Banking disputes and credit facility agreements.","Central Bank and Banking Sector Law No. 194 of 2020.","Leasing and factoring agreements.","Islamic sukuk and Shari'a-compliant finance.","AML/KYC compliance."]}},
+
+ {ar:{t:"حماية البيانات الشخصية",s:"امتثال الشركات لقانون حماية البيانات الشخصية ومتطلبات الحماية والإفصاح.",
+   d:["تطبيق قانون حماية البيانات الشخصية رقم ١٥١ لسنة ٢٠٢٠.","سياسات الخصوصية ومعالجة البيانات للمواقع والتطبيقات.","تعيين مسؤول حماية البيانات (DPO) ومتطلبات الترخيص.","الاستجابة لطلبات أصحاب البيانات والإخطار بالخروقات.","نقل البيانات عبر الحدود."]},
+  en:{t:"Data Protection",s:"Corporate compliance with the Personal Data Protection Law.",
+   d:["Compliance with Data Protection Law No. 151 of 2020.","Privacy policies and data processing notices.","DPO appointment and licensing requirements.","Data subject requests and breach notifications.","Cross-border data transfers."]}}
+];
+
+/* ============ Blog Posts ============ */
+const posts = [
+ {ar:{tag:"قانون جنائي",t:"قانون الإجراءات الجنائية الجديد رقم ١ لسنة ٢٠٢٤: أهم الضمانات المستحدثة",s:"عرض لأبرز التعديلات الجديدة في حقوق المتهم، وضوابط الحبس الاحتياطي، والإعلان الإلكتروني، والمحاكمة عن بُعد."},en:{tag:"Criminal",t:"The New Criminal Procedure Code 1/2024: Key New Safeguards",s:"Overview of the new protections for the accused, pretrial detention rules, e-service and remote hearings."}},
+ {ar:{tag:"قانون عمل",t:"قانون العمل الجديد رقم ١٤ لسنة ٢٠٢٥: ما يجب على الشركات والعاملين معرفته",s:"عقود العمل، الإجازات، ضوابط إنهاء الخدمة، والمحاكم العمالية المتخصصة المستحدثة."},en:{tag:"Labor",t:"New Labor Law 14/2025: What Employers and Employees Must Know",s:"Contracts, leave, termination rules, and the newly established specialized labor courts."}},
+ {ar:{tag:"عقارات",t:"قانون إيجار الأماكن القديمة رقم ١٦٤ لسنة ٢٠٢٥: المهل الانتقالية وحقوق الطرفين",s:"شرح المراحل الانتقالية لإنهاء العلاقات الإيجارية القديمة، وضوابط الزيادة، ومراكز الملاك والمستأجرين."},en:{tag:"Real Estate",t:"Old Rent Law 164/2025: Transitional Periods and Rights",s:"Phases of ending old leases, rent increase rules, and the positions of landlords and tenants."}},
+ {ar:{tag:"ضرائب",t:"حزمة التيسيرات الضريبية ٢٠٢٥: ماذا تعني للمشروعات الصغيرة والمتوسطة؟",s:"نظام الالتزام المبسط، حدود الإعفاء، والمزايا للمنشآت التي لا يتجاوز رقم أعمالها الحدود المقررة."},en:{tag:"Tax",t:"2025 Tax Facilitations Package for SMEs",s:"Simplified compliance scheme, exemption thresholds, and benefits for small enterprises."}},
+ {ar:{tag:"استثمار",t:"دليل المستثمر الأجنبي لتأسيس شركة في مصر",s:"مقارنة بين الأشكال القانونية، خطوات التأسيس أمام هيئة الاستثمار، ومزايا قانون الاستثمار رقم ٧٢ لسنة ٢٠١٧."},en:{tag:"Investment",t:"Foreign Investor's Guide to Incorporating in Egypt",s:"Comparing entity forms, GAFI procedures, and incentives under Investment Law No. 72 of 2017."}},
+ {ar:{tag:"أوراق تجارية",t:"الشيك بدون رصيد بين الجريمة الجنائية والمطالبة المدنية",s:"متى يتجه حامل الشيك إلى الطريق الجنائي ومتى تكون المطالبة المدنية أو أمر الأداء أجدى؟"},en:{tag:"Commercial",t:"Bounced Cheques: Criminal vs Civil Routes",s:"When to pursue criminal complaint versus civil action or payment order."}},
+ {ar:{tag:"عقارات",t:"قبل أن تشتري عقاراً: خطوات الفحص القانوني للملكية",s:"قائمة عملية بما يجب التحقق منه قبل التوقيع: سند الملكية، التسلسل، الأحمال والرهون، وأهمية التسجيل."},en:{tag:"Real Estate",t:"Before You Buy: Property Due Diligence Checklist",s:"What to verify before signing: title, chain, encumbrances, and registration importance."}},
+ {ar:{tag:"تحكيم",t:"شرط التحكيم في العقود التجارية: متى يحميك ومتى يضرك؟",s:"ضوابط صياغة شرط التحكيم، وأهم نقاط مشارطة التحكيم، وحالات بطلان أحكام التحكيم."},en:{tag:"Arbitration",t:"Arbitration Clauses: When They Help and When They Hurt",s:"Drafting principles, key terms, and grounds for setting aside awards."}},
+ {ar:{tag:"شركات",t:"الفرق بين الأسهم العادية والأسهم الممتازة في قانون الشركات",s:"الحقوق والامتيازات والقيود لكل نوع، والاعتبارات العملية للمستثمرين والمؤسسين."},en:{tag:"Corporate",t:"Ordinary vs Preferred Shares under Egyptian Corporate Law",s:"Rights, privileges, and restrictions for each class — practical considerations."}},
+ {ar:{tag:"حماية بيانات",t:"قانون حماية البيانات الشخصية ١٥١/٢٠٢٠: التزامات الشركات",s:"الترخيص، تعيين مسؤول حماية البيانات، سياسات الخصوصية، والإخطار بالخروقات الأمنية."},en:{tag:"Data Protection",t:"Data Protection Law 151/2020: Corporate Obligations",s:"Licensing, DPO appointment, privacy policies, and breach notifications."}},
+ {ar:{tag:"أحوال شخصية",t:"الحضانة والرؤية والولاية: حقوق الأبوين والقاصر",s:"شرح مبسط لمراحل الحضانة، حق الرؤية، والولاية على النفس والمال، وأحكام محكمة الأسرة."},en:{tag:"Family",t:"Custody, Visitation and Guardianship",s:"A clear breakdown of custody stages, visitation rights, and personal/financial guardianship."}},
+ {ar:{tag:"إداري",t:"الطعن على القرارات الإدارية: شروط الميعاد والمصلحة",s:"كيف تطعن على قرار إداري أضر بك؟ مواعيد التظلم الإداري، شرط المصلحة، وإجراءات الإلغاء."},en:{tag:"Administrative",t:"Challenging Administrative Decisions: Time-Limits and Standing",s:"How to challenge an administrative decision: grievance timelines, standing, annulment procedure."}},
+ {ar:{tag:"ملكية فكرية",t:"حماية العلامة التجارية في مصر: التسجيل والتعدي",s:"إجراءات التسجيل أمام مكتب العلامات، مدة الحماية، والإجراءات المدنية والجنائية ضد التعدي."},en:{tag:"IP",t:"Trademark Protection in Egypt: Registration & Infringement",s:"Registration before the trademark office, protection period, and civil/criminal remedies."}},
+ {ar:{tag:"بنوك",t:"قانون البنك المركزي ١٩٤/٢٠٢٠: ما الجديد للعملاء والشركات؟",s:"تعديلات حوكمة البنوك، حقوق العملاء، الأنظمة الرقمية، والتزامات مكافحة غسل الأموال."},en:{tag:"Banking",t:"Central Bank Law 194/2020: What's New for Clients & Companies",s:"Bank governance, customer rights, digital systems, and AML compliance."}}
+];
+
+/* ============ FAQ ============ */
+const faqs = [
+ {ar:{q:"كيف أحجز استشارة قانونية مع المؤسسة؟",a:"يمكنك الحجز بثلاث وسائل: ملء النموذج في صفحة «اتصل بنا»، التواصل عبر واتساب على الرقم 01146538509، أو إرسال بريد إلكتروني إلى JusticeLawFirm.aly@gmail.com مع نبذة عن موضوع الاستشارة."},en:{q:"How can I book a legal consultation?",a:"Three ways: fill the form on the Contact page, message us on WhatsApp at 01146538509, or email JusticeLawFirm.aly@gmail.com with a brief summary of your matter."}},
+ {ar:{q:"هل تخضع بياناتي للسرية الكاملة؟",a:"نعم. تلتزم المؤسسة بالسرية المهنية المقررة في قانون المحاماة المصري، ولا يُفصح عن بياناتك أو مستنداتك لأي طرف خارج فريق العمل المختص بملفك."},en:{q:"Is my information kept strictly confidential?",a:"Yes. The firm is bound by professional secrecy under Egyptian Bar Law. Your information is never disclosed outside the team handling your file."}},
+ {ar:{q:"هل تقدمون خدمات للشركات الأجنبية والمستثمرين؟",a:"بالتأكيد. لدينا خبرة في مساعدة الشركات الأجنبية على التأسيس في مصر، وهيكلة الاستثمارات، والامتثال للوائح المحلية، مع التواصل بالعربية والإنجليزية."},en:{q:"Do you serve foreign companies and investors?",a:"Yes. We have experience assisting foreign companies with incorporation, investment structuring, and local compliance, in both Arabic and English."}},
+ {ar:{q:"ما الفرق بين الاستشارة والتوكيل بقضية؟",a:"الاستشارة هي رأي قانوني بشأن موقفك دون تمثيلك أمام أي جهة. أما التوكيل فهو تكليفنا بمتابعة قضيتك أمام المحاكم أو الجهات الإدارية، ويستلزم تحرير توكيل رسمي."},en:{q:"Consultation vs. case representation — what's the difference?",a:"A consultation is a legal opinion without representation. A retainer authorizes us to act before courts or authorities and requires an official power of attorney."}},
+ {ar:{q:"كيف تُحتسب أتعاب المحاماة؟",a:"تُحدد الأتعاب وفقاً لطبيعة العمل وحجمه ودرجة التقاضي، ويُتفق عليها كتابةً قبل البدء، التزاماً بأحكام قانون المحاماة وما يقرره الميثاق المهني."},en:{q:"How are legal fees determined?",a:"Fees depend on the nature, scope, and court level of the work, and are agreed in writing in advance, in line with the Bar Law and professional ethics."}}
+];
+
+/* ============ Important Links ============ */
+const resources = [
+ {ar:{cat:"الجهات القضائية",ic:"⚖"},en:{cat:"Judicial Bodies",ic:"⚖"},
+  items:[
+   {n_ar:"محكمة النقض المصرية",n_en:"Egyptian Court of Cassation",u:"https://www.cc.gov.eg"},
+   {n_ar:"مجلس الدولة",n_en:"Council of State",u:"https://www.cco.gov.eg"},
+   {n_ar:"المحكمة الدستورية العليا",n_en:"Supreme Constitutional Court",u:"https://www.sccourt.gov.eg"},
+   {n_ar:"النيابة العامة",n_en:"Public Prosecution",u:"https://www.ppo.gov.eg"},
+   {n_ar:"وزارة العدل",n_en:"Ministry of Justice",u:"https://www.moj.gov.eg"},
+   {n_ar:"البوابة الإلكترونية لخدمات وزارة العدل",n_en:"MOJ e-Services Portal",u:"https://services.moj.gov.eg"}
+  ]},
+ {ar:{cat:"النقابات المهنية",ic:"👔"},en:{cat:"Professional Syndicates",ic:"👔"},
+  items:[
+   {n_ar:"نقابة المحامين المصرية",n_en:"Egyptian Bar Association",u:"https://www.egylaw.com"},
+   {n_ar:"الاتحاد الدولي للمحامين العرب",n_en:"Arab Lawyers Union",u:"https://www.arablawyersunion.org"},
+   {n_ar:"بوابة المحامين العرب",n_en:"Arab Lawyers Portal",u:"https://www.mohamoon.com"}
+  ]},
+ {ar:{cat:"الجهات التشريعية والتنفيذية",ic:"🏛"},en:{cat:"Legislative & Executive",ic:"🏛"},
+  items:[
+   {n_ar:"مجلس الوزراء المصري",n_en:"Egyptian Cabinet",u:"https://www.cabinet.gov.eg"},
+   {n_ar:"رئاسة الجمهورية",n_en:"Presidency of the Republic",u:"https://www.presidency.eg"},
+   {n_ar:"مجلس النواب",n_en:"House of Representatives",u:"https://www.parliament.gov.eg"},
+   {n_ar:"مجلس الشيوخ",n_en:"Senate",u:"https://www.senate.gov.eg"},
+   {n_ar:"الهيئة العامة لشؤون المطابع الأميرية",n_en:"Egyptian Government Printing Office",u:"https://www.alamiria.gov.eg"}
+  ]},
+ {ar:{cat:"الاستثمار والشركات",ic:"💼"},en:{cat:"Investment & Companies",ic:"💼"},
+  items:[
+   {n_ar:"الهيئة العامة للاستثمار والمناطق الحرة",n_en:"GAFI",u:"https://www.gafi.gov.eg"},
+   {n_ar:"الهيئة العامة للرقابة المالية",n_en:"Financial Regulatory Authority",u:"https://www.fra.gov.eg"},
+   {n_ar:"البورصة المصرية",n_en:"Egyptian Exchange (EGX)",u:"https://www.egx.com.eg"},
+   {n_ar:"السجل التجاري المصري",n_en:"Commercial Registry",u:"https://www.gafi.gov.eg/Arabic/eServices"}
+  ]},
+ {ar:{cat:"المالية والضرائب والبنوك",ic:"💰"},en:{cat:"Finance, Tax & Banking",ic:"💰"},
+  items:[
+   {n_ar:"وزارة المالية",n_en:"Ministry of Finance",u:"https://www.mof.gov.eg"},
+   {n_ar:"مصلحة الضرائب المصرية",n_en:"Egyptian Tax Authority",u:"https://www.eta.gov.eg"},
+   {n_ar:"مصلحة الجمارك",n_en:"Egyptian Customs Authority",u:"https://www.customs.gov.eg"},
+   {n_ar:"البنك المركزي المصري",n_en:"Central Bank of Egypt",u:"https://www.cbe.org.eg"}
+  ]},
+ {ar:{cat:"العقارات والتسجيل",ic:"🏠"},en:{cat:"Real Estate & Registration",ic:"🏠"},
+  items:[
+   {n_ar:"مصلحة الشهر العقاري والتوثيق",n_en:"Real Estate Publicity Authority",u:"https://www.realestate.gov.eg"},
+   {n_ar:"الهيئة العامة للمساحة",n_en:"Egyptian Survey Authority",u:"https://www.esa.gov.eg"},
+   {n_ar:"وزارة الإسكان والمرافق",n_en:"Ministry of Housing",u:"https://www.mhuc.gov.eg"}
+  ]},
+ {ar:{cat:"الأمن والداخلية",ic:"🛡"},en:{cat:"Security & Interior",ic:"🛡"},
+  items:[
+   {n_ar:"وزارة الداخلية",n_en:"Ministry of Interior",u:"https://www.moi.gov.eg"},
+   {n_ar:"الأحوال المدنية",n_en:"Civil Status Authority",u:"https://www.cso.gov.eg"},
+   {n_ar:"المرور المصري",n_en:"Egyptian Traffic",u:"https://www.moi.gov.eg/traffic"}
+  ]},
+ {ar:{cat:"العمل والتأمينات",ic:"👥"},en:{cat:"Labor & Insurance",ic:"👥"},
+  items:[
+   {n_ar:"وزارة العمل",n_en:"Ministry of Labor",u:"https://www.manpower.gov.eg"},
+   {n_ar:"الهيئة القومية للتأمين الاجتماعي",n_en:"National Social Insurance Authority",u:"https://www.nosi.gov.eg"}
+  ]},
+ {ar:{cat:"مصادر تشريعية وقضائية",ic:"📚"},en:{cat:"Legal Sources",ic:"📚"},
+  items:[
+   {n_ar:"بوابة التشريعات المصرية",n_en:"Egyptian Legislation Portal",u:"https://manshurat.org/taxonomy/term/9"},
+   {n_ar:"الجريدة الرسمية المصرية",n_en:"Official Gazette",u:"https://www.alamiria.gov.eg"},
+   {n_ar:"موسوعة التشريع المصري",n_en:"Egyptian Legislation Encyclopedia",u:"https://www.cc.gov.eg/judgments_legislations"}
+  ]}
+];
+
+/* ============ Translations (UI labels) ============ */
+const T = {
+  'addr':{en:"91 El-Fath Buildings – Embassies District – Nasr City – Cairo (Postal Code 11816)"},
+  'brand':{en:"Justice Law Firm"},
+  'nav.home':{en:"Home"},'nav.about':{en:"About"},'nav.practice':{en:"Practice Areas"},'nav.blog':{en:"Knowledge Center"},'nav.resources':{en:"Resources"},'nav.contact':{en:"Contact"},'nav.cta':{en:"Book a Consultation"},
+  'hero.eyebrow':{en:"Justice Law Firm – Attorneys & Legal Consultants"},
+  'hero.title':{en:"Your Rights, Handled with <br><em>Knowledge and Integrity</em>"},
+  'hero.lead':{en:"An Egyptian law firm combining the tradition of the profession with up-to-date legislative practice. We provide legal services before the Court of Cassation, appellate and first-instance courts in criminal, civil, commercial, real estate, administrative, labor, tax and family matters."},
+  'hero.cta1':{en:"Request a Consultation"},'hero.cta2':{en:"Chat on WhatsApp"},
+  'stat.tiers':{en:"Court tiers: Cassation – Appeal – First Instance"},'stat.fields':{en:"Specialized legal fields"},'stat.support':{en:"Fast response via WhatsApp and email"},'stat.confid':{en:"Full professional confidentiality"},
+  'about.kicker':{en:"About"},'about.title':{en:"Law that starts with understanding your reality"},
+  'about.p1':{en:"Justice Law Firm was founded by Attorney Ahmed Aly on the conviction that sound legal service begins with a precise understanding of the client's situation, before the wording of the law. We operate from our Nasr City office serving companies and individuals in Egypt and abroad."},
+  'about.p2':{en:"Our role is not limited to litigation across all court tiers — it extends to legal prevention: drafting solid contracts, structuring transactions, robust criminal defense, and providing reasoned legal opinions before decisions are made."},
+  'about.more':{en:"About the Firm"},
+  'about.vision.t':{en:"Our Vision"},'about.vision.p':{en:"To be a trusted Egyptian legal house for local and foreign clients alike, combining the rigor of the profession with close attention to legislative and judicial developments."},
+  'prac.kicker':{en:"Practice Areas"},'prac.title':{en:"Our Legal Practice"},'prac.sub':{en:"Comprehensive coverage of Egyptian law, with a dedicated section for each field."},'prac.all':{en:"View All Practice Areas"},
+  'method.kicker':{en:"Our Method"},'method.title':{en:"Four Commitments We Never Compromise"},
+  'm1.t':{en:"Study Before Opinion"},'m1.p':{en:"We never issue a legal opinion before a complete review of the facts and documents."},
+  'm2.t':{en:"Candor"},'m2.p':{en:"We present opportunities and risks honestly. We do not promise outcomes — only courts can decide."},
+  'm3.t':{en:"Professional Secrecy"},'m3.p':{en:"All client data and documents are strictly protected by professional secrecy."},
+  'm4.t':{en:"Reporting"},'m4.p':{en:"Regular updates on case progress, without the client having to ask."},
+  'blog.kicker':{en:"Knowledge Center"},'blog.title':{en:"Spreading Legal Awareness Is Part of Our Mission"},'blog.sub':{en:"Plain-language articles on Egyptian legislative developments."},'blog.all':{en:"Browse the Knowledge Center"},
+  'faq.kicker':{en:"FAQ"},'faq.title':{en:"Quick Answers to What Matters"},
+  'cta.t':{en:"The Right Legal Step Begins with a Consultation"},'cta.p':{en:"We are happy to listen and put our expertise at your service."},'cta.b1':{en:"Book an Appointment"},'cta.b2':{en:"Call Now: 01146538509"},
+
+  'ab.kicker':{en:"About the Firm"},'ab.title':{en:"A Founding Story and a Philosophy of Work"},
+  'ab.p1':{en:"Justice Law Firm was built on the conviction that the law is a calling before it is a profession — a partner to the judiciary in delivering justice, and the first line of defense for individual rights and corporate stability."},
+  'ab.p2':{en:"We combine practice before the Court of Cassation, appellate, first-instance and administrative courts, with constant attention to Egyptian legislation and the rulings of the Court of Cassation and the Supreme Constitutional Court."},
+  'ab.values':{en:"Our Values"},
+  'ab.v1':{en:"<strong>Integrity:</strong> in opinion, assessment and disclosure of strengths and risks."},
+  'ab.v2':{en:"<strong>Precision:</strong> in research, drafting and legal reasoning."},
+  'ab.v3':{en:"<strong>Confidentiality:</strong> absolute commitment to client information."},
+  'ab.v4':{en:"<strong>Currency:</strong> continuous tracking of legislative amendments and judicial principles."},
+  'ab.v5':{en:"<strong>Professional Excellence:</strong> the highest standard of advocacy at every court level."},
+  'ab.mission.t':{en:"Our Mission"},'ab.mission.p':{en:"To provide considered legal service grounded in a deep understanding of the facts, sound legal reasoning, candid disclosure, and absolute adherence to confidentiality and professional ethics."},
+  'ab.commit.t':{en:"Our Professional Commitment"},'ab.commit.p':{en:"The firm abides by Bar Law No. 17 of 1983 and the Code of Professional Conduct, makes no guarantees of outcomes, and discloses no information relating to its clients."},
+  'team.kicker':{en:"Legal Team"},'team.title':{en:"A team across all court tiers"},'team.sub':{en:"Our team includes attorneys at multiple professional grades to cover every court tier and specialized jurisdiction."},
+  'team.t1':{en:"Tier 1"},'team.t1n':{en:"Attorneys Admitted Before the Court of Cassation and the Supreme Administrative Court"},
+  'team.member1':{en:"Cassation Attorney"},'team.member1s':{en:"Cases requiring cassation appeals"},
+  'team.member2':{en:"Supreme Administrative Attorney"},'team.member2s':{en:"Administrative disputes before the Council of State"},
+  'team.member3':{en:"Constitutional Counsel"},'team.member3s':{en:"Unconstitutionality pleas before the Supreme Constitutional Court"},
+  'team.t2':{en:"Tier 2"},'team.t2n':{en:"Attorneys Admitted Before the High Court of Appeal"},
+  'team.founder':{en:"Attorney Ahmed Aly"},'team.founders':{en:"Founding Attorney — High Appeal"},
+  'team.member4':{en:"Appellate Attorneys"},'team.member4s':{en:"Felonies, civil, commercial, labor matters"},
+  'team.member5':{en:"Family Court Attorneys"},'team.member5s':{en:"Personal status and family courts"},
+  'team.t3':{en:"Tier 3"},'team.t3n':{en:"First-Instance Attorneys and Legal Researchers"},
+  'team.member6':{en:"First-Instance Attorneys"},'team.member6s':{en:"Hearing attendance and memorandum drafting"},
+  'team.member7':{en:"Legal Researchers"},'team.member7s':{en:"Legislative and case-law research"},
+  'team.member8':{en:"Administrative Department"},'team.member8s':{en:"File management and scheduling"},
+  'pp.kicker':{en:"Practice Areas"},'pp.title':{en:"Our Full Range of Practice"},'pp.sub':{en:"A transparent view of our work in each field, to support legal awareness."},
+  'bp.kicker':{en:"Knowledge Center"},'bp.title':{en:"The Legal Blog"},'bp.sub':{en:"General legal awareness articles, reviewed periodically for legislative updates."},
+  'rp.kicker':{en:"Resources"},'rp.title':{en:"Directory of Official Egyptian Legal Resources"},'rp.sub':{en:"Direct links to the Egyptian judicial, legislative and executive bodies most relevant to legal practice — organized for the use of attorneys, litigants and researchers."},
+  'rp.note':{en:"* Links are provided for guidance only. The firm is not responsible for the content or availability of external sites."},
+  'cp.kicker':{en:"Contact Us"},'cp.title':{en:"Book Your Legal Consultation"},'cp.sub':{en:"Choose the channel that suits you best: WhatsApp, email, phone, or the consultation form."},
+  'f.name':{en:"Name"},'f.phone':{en:"Phone Number"},'f.email':{en:"Email (optional)"},'f.type':{en:"Subject"},'f.channel':{en:"Preferred Channel"},'f.msg':{en:"Brief description of your inquiry"},
+  'f.opt1':{en:"Criminal Law"},'f.opt2':{en:"Commercial Law & Companies"},'f.opt3':{en:"Real Estate & Registration"},'f.opt4':{en:"Civil Litigation"},'f.opt5':{en:"Labor Law"},'f.opt6':{en:"Tax"},'f.opt7':{en:"Family & Personal Status"},'f.opt8':{en:"Administrative Litigation"},'f.opt9':{en:"Arbitration & ADR"},'f.opt10':{en:"Intellectual Property"},'f.opt11':{en:"Banking & Finance"},'f.opt12':{en:"Other"},
+  'f.ch1':{en:"WhatsApp"},'f.ch2':{en:"Email"},'f.ch3':{en:"Phone Call"},
+  'f.privacy':{en:"By submitting this form you consent to the processing of your data solely to respond to your inquiry, in accordance with Personal Data Protection Law No. 151 of 2020 and our professional secrecy obligations."},
+  'f.submit':{en:"Send Request"},
+  'ci.addr':{en:"Address"},'ci.addr.v':{en:"91 El-Fath Buildings – Embassies District – Nasr City – Cairo<br>Postal Code: 11816"},
+  'ci.tel':{en:"Phone"},'ci.wa':{en:"WhatsApp"},'ci.wa.v':{en:"Direct WhatsApp chat"},'ci.email':{en:"Email"},'ci.hours':{en:"Working Hours"},'ci.hours.v':{en:"Saturday – Thursday: 10 AM to 8 PM"},
+  'ci.corp.t':{en:"For Companies & Investors"},'ci.corp.p':{en:"Retainer and ongoing legal advisor arrangements are available. Please note this in your request."},
+  'ft.about':{en:"Justice Law Firm"},'ft.about.p':{en:"An Egyptian law firm providing legal services to companies, investors and individuals, grounded in diligence, integrity and confidentiality."},
+  'ft.links':{en:"Quick Links"},'ft.official':{en:"Official Bodies"},
+  'ft.cc':{en:"Egyptian Court of Cassation"},'ft.coc':{en:"Council of State"},'ft.moj':{en:"Ministry of Justice"},'ft.gafi':{en:"GAFI"},'ft.cab':{en:"Egyptian Cabinet"},
+  'ft.contact':{en:"Contact"},'ft.addr':{en:"91 El-Fath Buildings – Embassies District – Nasr City – Cairo"},'ft.code':{en:"Postal Code: 11816"},
+  'ft.rights':{en:"Justice Law Firm – All rights reserved."},'ft.disc':{en:"This site's content is for general legal awareness and does not constitute legal advice."}
+};
+
+/* ============ Render functions ============ */
+let currentLang = 'ar';
+
+function svgIcon(){return '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v15M5 6h14M8 18h8" stroke-linecap="round"/><path d="M5 6l-3 5h6l-3-5zM19 6l-3 5h6l-3-5z" stroke-linejoin="round"/><path d="M2 11a3 3 0 006 0M16 11a3 3 0 006 0"/></svg>';}
+
+function renderPractices(){
+  const data = practices.map(x => x[currentLang]);
+  document.getElementById('home-practices').innerHTML = data.slice(0,6).map((p,i)=>`
+    <div class="card reveal">${svgIcon()}<h3>${p.t}</h3><p>${p.s}</p>
+    <span class="more" onclick="go('practice');setTimeout(()=>document.getElementById('pr-${i}').scrollIntoView({behavior:'smooth'}),100)">${currentLang==='ar'?'التفاصيل ←':'Details →'}</span></div>`).join('');
+  document.getElementById('practice-list').innerHTML = data.map((p,i)=>`
+    <div class="card" id="pr-${i}">${svgIcon()}<h3>${p.t}</h3><p>${p.s}</p>
+    <ul style="margin:14px 18px 0 0;font-size:15px;color:#555">${p.d.map(x=>`<li style="margin-bottom:7px">${x}</li>`).join('')}</ul>
+    <span class="more" onclick="go('contact')">${currentLang==='ar'?'استشرنا في هذا المجال ←':'Consult us in this field →'}</span></div>`).join('');
+}
+
+function postCard(p){return `<article class="post reveal"><span class="tag">${p.tag}</span><div class="body"><h3>${p.t}</h3><p>${p.s}</p><div class="disclaimer">${currentLang==='ar'?'هذا المحتوى للتوعية القانونية العامة ولا يُعد استشارة قانونية.':"This content is for general legal awareness only and does not constitute legal advice."}</div></div></article>`;}
+function renderPosts(){
+  const data = posts.map(x => x[currentLang]);
+  document.getElementById('home-posts').innerHTML = data.slice(0,3).map(postCard).join('');
+  document.getElementById('blog-list').innerHTML = data.map(postCard).join('');
+}
+
+function renderFAQ(){
+  const data = faqs.map(x => x[currentLang]);
+  document.getElementById('faq-list').innerHTML = data.map((f,i)=>`
+    <div class="faq-item reveal" id="faq-${i}">
+      <div class="faq-q" onclick="document.getElementById('faq-${i}').classList.toggle('open')">${f.q}</div>
+      <div class="faq-a"><p style="padding-top:6px">${f.a}</p></div>
+    </div>`).join('');
+}
+
+function renderResources(){
+  document.getElementById('res-list').innerHTML = resources.map(cat => {
+    const c = cat[currentLang];
+    return `<div class="res-cat reveal"><h3><span class="ic">${c.ic}</span>${c.cat}</h3><ul>${
+      cat.items.map(it => `<li><a href="${it.u}" target="_blank" rel="noopener">${currentLang==='ar'?it.n_ar:it.n_en}</a></li>`).join('')
+    }</ul></div>`;
+  }).join('');
+}
+
+/* ============ Lang switch ============ */
+function toggleLang(){
+  currentLang = currentLang === 'ar' ? 'en' : 'ar';
+  document.body.classList.toggle('en', currentLang==='en');
+  document.documentElement.lang = currentLang;
+  document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+  document.body.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+  document.getElementById('langBtn').textContent = currentLang === 'ar' ? 'EN' : 'عربي';
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.dataset.i18n;
+    if (currentLang === 'en' && T[key]) el.textContent = T[key].en;
+    else el.textContent = el.dataset.original || el.textContent;
+  });
+  document.querySelectorAll('[data-i18n-html]').forEach(el => {
+    const key = el.dataset.i18nHtml;
+    if (currentLang === 'en' && T[key]) el.innerHTML = T[key].en;
+    else el.innerHTML = el.dataset.originalHtml || el.innerHTML;
+  });
+  renderPractices(); renderPosts(); renderFAQ(); renderResources();
+  observeReveal();
+}
+
+/* Save originals so we can swap back */
+document.querySelectorAll('[data-i18n]').forEach(el => el.dataset.original = el.textContent);
+document.querySelectorAll('[data-i18n-html]').forEach(el => el.dataset.originalHtml = el.innerHTML);
+
+/* ============ Page navigation ============ */
+function go(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById('page-'+id).classList.add('active');
+  document.querySelectorAll('nav.menu a[data-page]').forEach(a=>a.classList.toggle('active',a.dataset.page===id));
+  document.getElementById('menu').classList.remove('open');
+  window.scrollTo({top:0,behavior:'smooth'});
+  observeReveal();
+}
+
+/* ============ Form submit ============ */
+function sendForm(e){
+  e.preventDefault();
+  const name = document.getElementById('fname').value;
+  const phone = document.getElementById('fphone').value;
+  const email = document.getElementById('femail').value;
+  const type = document.getElementById('ftype').value;
+  const channel = document.getElementById('fchannel').value;
+  const msg = document.getElementById('fmsg').value;
+  if (channel === 'email') {
+    const subject = encodeURIComponent("طلب استشارة قانونية – " + type);
+    const body = encodeURIComponent(`الاسم: ${name}\nالهاتف: ${phone}\nالبريد: ${email}\nالموضوع: ${type}\n\nالاستفسار:\n${msg}`);
+    window.location.href = `mailto:JusticeLawFirm.aly@gmail.com?subject=${subject}&body=${body}`;
+  } else if (channel === 'phone') {
+    alert(currentLang==='ar' ? 'سنتصل بك على الرقم: ' + phone + '\nأو يمكنك الاتصال بنا الآن على 01146538509' : 'We will call you at: ' + phone + '\nOr call us now at 01146538509');
+  } else {
+    const wm = `طلب استشارة من موقع المؤسسة:%0a%0aالاسم: ${encodeURIComponent(name)}%0aالهاتف: ${encodeURIComponent(phone)}%0aالبريد: ${encodeURIComponent(email)}%0aالموضوع: ${encodeURIComponent(type)}%0a%0aالاستفسار: ${encodeURIComponent(msg)}`;
+    window.open('https://wa.me/201146538509?text=' + wm, '_blank');
+  }
+  return false;
+}
+
+/* ============ Reveal on scroll ============ */
+function observeReveal(){
+  const els = document.querySelectorAll('.reveal:not(.show)');
+  const io = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target);} });
+  },{threshold:0.12});
+  els.forEach(el => io.observe(el));
+}
+
+/* ============ Init ============ */
+renderPractices(); renderPosts(); renderFAQ(); renderResources();
+document.getElementById('year').textContent = new Date().getFullYear();
+observeReveal();
+</script>
+</body>
+</html>
